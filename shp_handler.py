@@ -10,8 +10,8 @@ import time
 class ShapeHandler:
     def __init__(self):
         # start_time = time.time()
-        # self.shapes = gp.read_file(file_path)
-        self.shapes = gp.read_feather('shapes.feather')
+        self.shapes = gp.read_file('Havsomr_SVAR_2016_3b_cp1252.shp')
+        # self.shapes = gp.read_feather('shapes.feather')
         # print("Timeit:--%.5f sec" % (time.time() - start_time))
 
     def find_area_for_point(self, lat, lon):
